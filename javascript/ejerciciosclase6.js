@@ -1,55 +1,57 @@
 
-/*1.Solicita al usuario tres números enteros e indícale cuál es el menor.*/
-alert("Inserta un número entero")
-var a = prompt("a")
-var b = prompt("b")
-var c = prompt("c")
+//1.Solicita al usuario tres números enteros e indícale cuál es el menor.
 
+alert("Introduzca 3 números enteros y te diré cual es el menor")
+var n1 = prompt()
+var n2 = prompt()
+var n3 = prompt()
 
-if (a <= b && a <= c) {
-    alert(a);
-} else if (b <= a && b <= c) {
-    alert(b);
-} else {
-    alert(c);
+if (n1 < n2 && n1 < n3) {
+    alert(n1)
+} else if (n2 < n1 && n2 < n3) {
+    alert(n2)
+} if (n3 < n1 && n3 < n1) {
+    alert(n3)
 }
 
 
-/*2.Solicita al usuario una frase y una letra y muestra la cantidad de veces que aparece la letra en la frase.*/
+//2.Solicita al usuario una frase y una letra y muestra la cantidad de veces que aparece la letra en la frase.
 
-var sentence = window.prompt("Inserta una frase: ");
-var letter = window.prompt("Inserta una letra: ");
+var frase = prompt("Inserta una frase: ");
+var letra = prompt("Inserta una letra: ");
 let cont = 0;
-for (let i = 0; i < sentence.length; i++) { /*Esto sirve para recorrer las letras de la frase*/
-    if (sentence[i] == letter) {
+for (let i = 0; i < frase.length; i++) {
+    if (frase[i] == letra) {
         cont++;
     }
 }
-
-alert("La letra " + letter + " aparece " + cont + " veces");
-
-
-/*3.Suma o resta (según elija el usuario) dos números reales.*/
+alert("La letra " + letra + " aparece " + cont + " veces");
 
 
-var numero1 = window.prompt("Inserta un numero: ");
-var numero2 = window.prompt("Inserta otro numero: ");
-var operacion = window.prompt("Indique suma o resta (s/r): ");
-numero1 = parseFloat(numero1);
-numero2 = parseFloat(numero2);
 
-if (operacion == 's') {
-    alert(numero1 + numero2);
+//3.Suma o resta (según elija el usuario) dos números reales.
+
+
+alert("Introduzca un número")
+var n1 = prompt()
+alert("¿Prefiere sumar o restar (s/r)")
+var n2 = prompt()
+alert("Introduzca otro número")
+var n3 = prompt()
+n1 = parseFloat(n1)
+n3 = parseFloat(n3)
+
+if (n2 == "s") {
+    alert(n1 + n3);
+} if (n2 == "r") {
+    alert(n1 - n3);
+} if (n2 != 'r' && n2 != 's') {
+    alert('has introducido mal los datos')
 }
-if (operacion == 'r') {
-    alert(numero1 - numero2);
-}
-if (operacion != 'r' && operacion != 's') {
-    alert('has metido mal la letra')
-}/*
- 
 
-4.Almacena en dos variables datos de validación (usuario y contraseña) correctos y permite que el usuario valide (dispone de 3 intentos)*/
+
+
+//4.Almacena en dos variables datos de validación(usuario y contraseña) correctos y permite que el usuario valide(dispone de 3 intentos)
 
 var userOK = "Estudiante";
 var passwordOK = "batman17";
@@ -103,7 +105,11 @@ switch (a) {
 
 
 
-/*6.Ordena alfabéticamente un array con 7 palabras, puedes usar el algoritmo de la burbuja
+//6.Ordena alfabéticamente un array con 7 palabras, puedes usar el algoritmo de la burbuja
+
+
+const lista = ["alma", "ojo", "mesa", "gafas", "raton", "lapiz", "silla"];
+
 
 
 
